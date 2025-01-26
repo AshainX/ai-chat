@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { ConvexClient } from "convex/browser";
-
+import  ConvexClientProvider  from "@/components/ConvexClientProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AI-CHAT",
-  description: "Chat with the AI",
+  title: "AI Chat App",
+  description: "A modern chat application built with Next.js and Convex",
 };
 
 export default function RootLayout({
@@ -26,15 +25,13 @@ export default function RootLayout({
 }>) {
   return (
     <ConvexClientProvider>
-
-
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+      <html lang="en">
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
+          {children}
+        </body>
+      </html>
     </ConvexClientProvider>
   );
 }
