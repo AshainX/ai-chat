@@ -1,0 +1,12 @@
+'''''''
+
+Building the AI Chat app
+
+'''''''
+
+
+Signup in clerk 
+
+Setup in NextJS using the command - pnpm dlx create-next-app@latest ai-chat
+
+
