@@ -9,4 +9,8 @@ Signup in clerk
 
 Setup in NextJS using the command - pnpm dlx create-next-app@latest ai-chat
 
+adding clerk api keys in .env.local
 
+adding middleware from the clerk website
+
+adding clerk and convex together 
