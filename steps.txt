@@ -13,4 +13,6 @@ adding clerk api keys in .env.local
 
 adding middleware from the clerk website
 
+.env.local file run npx convex dev
+
 adding clerk and convex together 
