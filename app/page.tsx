@@ -1,4 +1,4 @@
-import { SignedIn } from "@clerk/nextjs";
+import { SignedIn, SignedOut } from '@clerk/nextjs'
 import Image from "next/image";
 import Link from "next/link";
 
@@ -22,9 +22,8 @@ export default function Home() {
             </span>
           </p>
         </header>
-
+        
          
-
         </section>
     </main>
   );
